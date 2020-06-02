@@ -2,8 +2,8 @@ class Queue {
   constructor() {
     this.items = []
   }
-  enqueue() {
-    return this.items.push()
+  enqueue(item) {
+    return this.items.push(item)
   }
   dequeue() {
     return this.items.shift()
@@ -24,3 +24,4 @@ class Queue {
     this.items = []
   }
 }
+module.exports = Queue
