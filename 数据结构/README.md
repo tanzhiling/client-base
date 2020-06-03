@@ -95,7 +95,12 @@
 3. preOrderTraverse(cb) 先序遍历
 4. inOrderTraverse(cb) 中序遍历
 5. postOrderTraverse(cb) 后序遍历
-6. minNodeValue() 最小节点值
-7. maxNodeValue() 最大节点值
+6. minNode() 最小节点值
+7. maxNode() 最大节点值
 8. removeNode(value) 移除节点
 9. destory() 销毁树
+
+二叉搜索树即使同一个数据源 但由于节点插入顺序不一样 会生成不同的tree 遍历所需要的时间也不一样
+
+#### AVL树
+>AVL树是一种自平衡二叉搜索树 AVL树本质上是带了平衡功能的二叉搜索树 在AVL树中任何节点的两个子树的高度最大差别为1 也就是说这种树会在添加或移除节点时尽量试着成为一颗完整的树 所有也叫高度平衡树 查找插入和删除在平均和最坏情况下都是0(log n) 增加和删除可能需要通过一次或多次树旋转来重新平衡这个数
